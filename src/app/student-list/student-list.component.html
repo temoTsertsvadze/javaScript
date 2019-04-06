@@ -1,0 +1,23 @@
+<div class="studentebisSia" *ngFor="let student of StudentList">
+  {{student.name}}
+  {{student.surname}}
+  {{student.ID}}
+  {{student.sallary}}
+
+
+
+</div>
+<table border="2px">
+  <tr>
+    <th>name</th>
+    <th>surname</th>
+    <th>ID</th>
+    <th>sallary</th>
+  </tr>
+  <tr *ngFor="let student of StudentList">
+    <td> {{student.name}}</td>
+    <td> {{student.surname}}</td>
+    <td>  {{student.ID}}</td>
+    <td>   {{student.sallary}}</td>
+  </tr>
+  </table>
